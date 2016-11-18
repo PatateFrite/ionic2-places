@@ -5,6 +5,7 @@
     </ion-toolbar>
     <div padding>
       <button ion-button full color="danger" (click)="logout()">Logout</button>
+      <button ion-button (click)="settingsGo()">Settings</button>
     </div>
   </ion-content>
 </ion-menu>
@@ -14,4 +15,5 @@
   <ion-tab [root]="tab2Root" tabTitle="add" tabIcon="add-circle"></ion-tab>
   <ion-tab [root]="tab3Root" tabTitle="around" tabIcon="map"></ion-tab>
   <ion-tab [root]="tab4Root" tabTitle="friends" tabIcon="people"></ion-tab>
+  <ion-tab [root]="tab5Root" tabTitle="settings" tabIcon="settings"></ion-tab>
 </ion-tabs>

@@ -6,6 +6,7 @@ import { AroundPage } from '../around/around';
 import { FriendsPage } from '../friends/friends';
 import { Routes } from '../../app/app.routes';
 import {Auth} from '../../providers/auth';
+import { SettingsPage } from '../settings/settings';
 
 /*
   Generated class for the Tabs tabs.
@@ -23,6 +24,7 @@ export class TabsPage {
   tab2Root: any = AddPage;
   tab3Root: any = AroundPage;
   tab4Root: any = FriendsPage;
+  tab5Root: any = SettingsPage;
 
   email:string;
 
@@ -35,4 +37,7 @@ export class TabsPage {
     this.navCtrl.setRoot(Routes.getRootPage(false));
   }
 
+settingsGo(){
+  
+}
 }
